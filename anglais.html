@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lantant Kazkabar</title>
+
+  <!-- Typography -->
+  <link rel="stylesheet" href="https://use.typekit.net/xjn7inp.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="map_title">Lantant Kazkabar</h1>
+
+    <!-- Image de la carte -->
+    <img
+  src="images/cartographie.png"
+  alt="Illustration de la carte"
+  class="map_image"
+  id="mapImage"
+    />
+
+    <!-- Legend -->
+    <div class="legend">
+
+      <!-- You are here -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_ici.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>YOU ARE HERE</h2>
+        </div>
+      </div>
+
+      <!-- Viewpoint -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_vue.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>VIEWPOINT</h2>
+        </div>
+      </div>
+
+      <!-- Restrooms -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_pq.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>RESTROOMS</h2>
+        </div>
+      </div>
+
+      <!-- Parking -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_parking.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>PARKING</h2>
+        </div>
+      </div>
+
+      <!-- Gathering area -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_zone.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>GATHERING AREA</h2>
+          <p>Meeting point for groups or in case of emergency.</p>
+        </div>
+      </div>
+
+      <!-- Reception -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_1.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>RECEPTION</h2>
+          <p>Hangar, kitchen, first aid kit, the heart of Kazkabar.</p>
+        </div>
+      </div>
+
+      <!-- Office -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_2.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>OFFICE</h2>
+          <p>Administration area.</p>
+        </div>
+      </div>
+
+      <!-- The tree for everyone -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_arbre.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>THE TREE FOR EVERYONE</h2>
+          <p>Open space for everyone to rest, play, chat, and gather.</p>
+        </div>
+      </div>
+
+      <!-- Natural fallow land -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_3.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>NATURAL FALLOW LAND</h2>
+          <p>Undisturbed nature for the practice of <strong><em>maronaz</em></strong>: bees, wood, rabbits, hedgehogs, quails, or food for animals.</p>
+        </div>
+      </div>
+
+      <!-- Mother garden -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_4.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>MOTHER GARDEN</h2>
+          <p>Nursery path and area for seed and plant workshops.</p>
+        </div>
+      </div>
+
+      <!-- Grow what you eat -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_5.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>GROW WHAT YOU EAT</h2>
+          <p>Rice, vegetables, fruits, spices, corn, roots, and herbal teas.</p>
+        </div>
+      </div>
+
+      <!-- Managed natural area -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_6.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>MANAGED NATURAL AREA</h2>
+          <p>Path for <strong><em>cabri</em></strong> and oxen.</p>
+        </div>
+      </div>
+
+      <!-- Storage area -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_7.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>STORAGE AREA</h2>
+          <p>Space for storing materials and resources.</p>
+        </div>
+      </div>
+
+      <!-- Soil mound -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_8.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>SOIL MOUND</h2>
+          <p>Earth mound used for soil sifting workshops.</p>
+        </div>
+      </div>
+
+      <!-- Future planting area -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_pointi.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>FUTURE PLANTING AREA</h2>
+          <p>Area reserved for upcoming plantations.</p>
+        </div>
+      </div>
+
+      <!-- Podium -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_a.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>PODIUM</h2>
+          <p>Platform for presentations, shows, and activities.</p>
+        </div>
+      </div>
+
+      <!-- Meeting space -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_b.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>MEETING SPACE</h2>
+          <p>Area for <strong><em>"zangoun"</em></strong>, that is discussions for the organization of the association.</p>
+        </div>
+      </div>
+
+      <!-- Earth oven -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_four.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>EARTH OVEN</h2>
+          <p>Installation for baking or experimental firing of clay/earth.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- Footer global -->
+<footer class="site_footer">
+
+  <!-- Choix des langues -->
+  <div class="language_footer">
+    <a href="kreol.html">Kréol</a>
+    <a href="francais.html">Français</a>
+    <a href="anglais.html">English</a>
+  </div>
+
+  <!-- Logo + texte -->
+  <div class="footer_bottom">
+    <img src="images/logo_kazkabar.png" alt="Logo Kazkabar" class="footer_logo">
+    <p>© Coralie Zitte La Fé</p>
+  </div>
+
+</footer>
+
+
+<div class="map_overlay" id="mapOverlay">
+  <img src="images/cartographie.png" alt="Carte en plein écran">
+</div>
+
+<script>
+  const mapImage = document.getElementById("mapImage");
+  const mapOverlay = document.getElementById("mapOverlay");
+
+  mapImage.addEventListener("click", () => {
+    mapOverlay.style.display = "flex";
+  });
+
+  mapOverlay.addEventListener("click", () => {
+    mapOverlay.style.display = "none";
+  });
+</script>
+
+
+</body>
+</html>

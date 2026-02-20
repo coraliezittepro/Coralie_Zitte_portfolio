@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lantant Kazkabar</title>
+
+  <!-- Typographie -->
+  <link rel="stylesheet" href="https://use.typekit.net/xjn7inp.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="map_title">Lantant Kazkabar</h1>
+
+    <!-- Image de la carte -->
+    <img
+  src="images/cartographie.png"
+  alt="Illustration de la carte"
+  class="map_image"
+  id="mapImage"
+    />
+
+
+    <!-- Légende -->
+    <div class="legend">
+
+      <!-- Vous êtes ici -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_ici.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>VOUS ÊTES ICI</h2>
+        </div>
+      </div>
+
+      <!-- Point de vue -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_vue.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>POINT DE VUE</h2>
+        </div>
+      </div>
+
+      <!-- Toilettes -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_pq.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>TOILETTES</h2>
+        </div>
+      </div>
+
+      <!-- Parking -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_parking.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>PARKING</h2>
+        </div>
+      </div>
+
+      <!-- Zone de rencontre -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_zone.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>ZONE DE RENCONTRE</h2>
+          <p>Point de rendez-vous, pour des groupes ou en cas de danger.</p>
+        </div>
+      </div>
+
+      <!-- Accueil -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_1.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>ACCUEIL</h2>
+          <p>Hangar, cuisine, trousse de secours, le cœur de Kazkabar.</p>
+        </div>
+      </div>
+
+      <!-- Bureau -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_2.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>BUREAU</h2>
+          <p>Administration.</p>
+        </div>
+      </div>
+
+      <!-- L’arbre pour tout·e·s -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_arbre.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>L’ARBRE POUR TOUT·E·S</h2>
+          <p>Lieu ouvert à tous pour se reposer, jouer, discuter et se retrouver.</p>
+        </div>
+      </div>
+
+      <!-- Espace naturel non aménagé -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_3.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>ESPACE NATUREL NON AMÉNAGÉ</h2>
+          <p>Pour la pratique du <strong><em>maronaz</em></strong>: les guêpes, le bois, les lapins, les tangues, les cailles, manger pour les animaux.</p>
+        </div>
+      </div>
+
+      <!-- Jardin mère -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_4.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>JARDIN MÈRE</h2>
+          <p>Sentier pépinière et zone d'atelier semance et pépinière.</p>
+        </div>
+      </div>
+
+      <!-- Plantes : ce que tu manges -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_5.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>PLANTE CE QUE TU MANGES</h2>
+          <p>Le riz, les légumes, les fruits, les épices, le maïs, les racines, la tisane.</p>
+        </div>
+      </div>
+
+      <!-- Karodbwa okipé -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_6.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>ESPACE NATUREL ENTRETENU</h2>
+          <p>Sentier <strong><em>kabri</em></strong> et bœuf.</p>
+        </div>
+      </div>
+
+      <!-- Stockage -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_7.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>STOCKAGE</h2>
+          <p>Zone destinée au rangement du matériel et des ressources.</p>
+        </div>
+      </div>
+
+      <!-- Butte de terre -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_8.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>BUTTE DE TERRE</h2>
+          <p>Colline de terre utilisée pour l'atelier de tamisage de la terre.</p>
+        </div>
+      </div>
+
+      <!-- Future plantation -->
+      <div class="legend_item">
+        <img src="images/pictos/picto_pointi.png" alt="" class="legend_picto">
+        <div class="legend_content">
+          <h2>FUTURE PLANTATION</h2>
+          <p>Zone réservée à de prochaines plantations.</p>
+        </div>
+      </div>
+
+
+      <!-- Podium -->
+    <div class="legend_item">
+      <img src="images/pictos/picto_a.png" alt="" class="legend_picto">
+      <div class="legend_content">
+        <h2>PODIUM</h2>
+        <p>Plateforme destinée aux présentations, spectacles et animations.</p>
+      </div>
+    </div>
+
+    <!-- Espace de réunion -->
+    <div class="legend_item">
+      <img src="images/pictos/picto_b.png" alt="" class="legend_picto">
+      <div class="legend_content">
+        <h2>ESPACE DE RÉUNION</h2>
+        <p>Zone dédiée aux rencontres, discussions et ateliers collectifs.</p>
+      </div>
+    </div>
+
+    <!-- Four pour la terre -->
+    <div class="legend_item">
+      <img src="images/pictos/picto_four.png" alt="" class="legend_picto">
+      <div class="legend_content">
+        <h2>FOUR POUR LA TERRE</h2>
+        <p>Installation pour la cuisson ou la cuisson expérimentale de la terre.</p>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+<!-- Footer global -->
+<footer class="site_footer">
+
+  <!-- Choix des langues -->
+  <div class="language_footer">
+    <a href="kreol.html">Kréol</a>
+    <a href="francais.html">Français</a>
+    <a href="anglais.html">English</a>
+  </div>
+
+  <!-- Logo + texte -->
+  <div class="footer_bottom">
+    <img src="images/logo_kazkabar.png" alt="Logo Kazkabar" class="footer_logo">
+    <p>© Coralie Zitte La Fé</p>
+  </div>
+
+</footer>
+
+<div class="map_overlay" id="mapOverlay">
+  <img src="images/cartographie.png" alt="Carte en plein écran">
+</div>
+
+<script>
+  const mapImage = document.getElementById("mapImage");
+  const mapOverlay = document.getElementById("mapOverlay");
+
+  mapImage.addEventListener("click", () => {
+    mapOverlay.style.display = "flex";
+  });
+
+  mapOverlay.addEventListener("click", () => {
+    mapOverlay.style.display = "none";
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
