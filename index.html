@@ -1,185 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lantant Kazkabar - Cartographie</title>
-
-  <!-- Typographie -->
-  <link rel="stylesheet" href="https://use.typekit.net/xjn7inp.css">
-
-  <!-- CSS séparé -->
+  <meta name="description" content="Portfolio de Cocodelo Studio par Coralie Zitte, designer graphique à La Réunion : identité visuelle, édition, médiation culturelle et communication.">
+  <meta name="theme-color" content="#ff4d00">
+  <meta property="og:title" content="Cocodelo Studio — Portfolio de Coralie Zitte">
+  <meta property="og:description" content="Identités visuelles, éditions et dispositifs de médiation conçus à La Réunion.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cocodelostudio.com/">
+  <meta property="og:image" content="https://cocodelostudio.com/images/cocodelo-social.jpg">
+  <title>Cocodelo Studio — Coralie Zitte, designer graphique</title>
+  <link rel="stylesheet" href="https://use.typekit.net/euz8xsv.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23cd036c'/%3E%3Cpath d='M43 20c-3-4-7-6-12-6-10 0-17 7-17 18s7 18 17 18c5 0 10-2 13-6l-6-7c-2 2-4 3-7 3-4 0-7-3-7-8s3-8 7-8c3 0 5 1 7 3z' fill='%23fff6ee'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .home-downloads {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: clamp(32px, 5vw, 64px) max(24px, 5vw) 0;
+    }
+
+    .download-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border: 2px solid #cd036c;
+      border-radius: 999px;
+      background: #cd036c;
+      color: #fff6ee;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color .2s ease, color .2s ease, transform .2s ease;
+    }
+
+    .download-button:hover,
+    .download-button:focus-visible {
+      background: transparent;
+      color: #cd036c;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .home-downloads {
+        flex-direction: column;
+      }
+
+      .download-button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-
- <div class="language_container">
-
-    <!-- Logo -->
-    <img src="images/logo_kazkabar.png" alt="Logo Kazkabar" class="logo">
-
-    <!-- Titre -->
-    <h1 class="language_title">Lantant Kazkabar</h1>
-
-    <!-- Choix langue -->
-    <div class="language_choices">
-      <a href="kreol.html" class="language_card">
-        <img src="images/pictos/kreol.png" alt="FR" class="language_flag">
-        <span class="language_name">KRÉOL KWZ</span>
-      </a>
-      <a href="francais.html" class="language_card">
-        <img src="images/pictos/francais.png" alt="FR" class="language_flag">
-        <span class="language_name">Français</span>
-      </a>
-      <a href="anglais.html" class="language_card">
-        <img src="images/pictos/anglais.png" alt="EN" class="language_flag">
-        <span class="language_name">English</span>
-      </a>
-    </div>
-
-  </div>
-
-<!-- Footer global -->
-<footer class="site_footer">
-
-  <!-- Choix des langues -->
-  <div class="language_footer">
-    <a href="kreol.html">Kréol</a>
-    <a href="francais.html">Français</a>
-    <a href="anglais.html">English</a>
-  </div>
-
-  <!-- Logo + texte -->
-  <div class="footer_bottom">
-    <img src="images/logo_kazkabar.png" alt="Logo Kazkabar" class="footer_logo">
-    <p>© Coralie Zitte La Fé</p>
-  </div>
-
-</footer>
-
+  <div class="noise"></div>
+  <nav class="nav"><a class="brand" href="index.html">COCODELO STUDIO</a><button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><div class="nav-links"><a href="#projets">Projets</a><a href="apropos.html">À propos</a><a class="pill" href="#contact">Me contacter</a></div></nav>
+  <main id="top">
+    <header class="hero"><div><div class="eyebrow"><span class="dot"></span>Disponible pour de nouvelles collaborations</div><h1><span class="hero-title-word">COCO<wbr>DELO</span><span class="outline hero-title-studio">STUDIO</span></h1><p class="hero-copy">Designer graphique et numérique à La Réunion, je transforme les histoires, les savoir-faire et les identités en expériences visuelles fortes et accessibles.</p></div><div class="hero-side"><div class="orbit"><span class="orbit-label">GRAPHISME<br>×<br>CULTURE<br>×<br>NUMÉRIQUE</span></div><span class="scroll">Défiler pour explorer ↓</span></div></header>
+    <div class="marquee"><div class="track"><span>IDENTITÉ VISUELLE <b>✦</b> ÉDITION <b>✦</b> SIGNALÉTIQUE <b>✦</b> WEB DESIGN <b>✦</b> ILLUSTRATION <b>✦</b> IDENTITÉ VISUELLE <b>✦</b> ÉDITION <b>✦</b> SIGNALÉTIQUE <b>✦</b> WEB DESIGN <b>✦</b> ILLUSTRATION <b>✦</b></span></div></div>
+    <div class="home-downloads" aria-label="Télécharger mes documents"><a class="download-button" href="Coralie_Zitte_Graphiste_CV.pdf" download>Télécharger mon CV <span aria-hidden="true">↓</span></a><a class="download-button" href="Coralie_Zitte_Graphiste_Portfolio.pdf" download>Télécharger mon portfolio <span aria-hidden="true">↓</span></a></div>
+    <section id="projets"><div class="section-head"><h2>Projets</h2><p>Une sélection de projets réels menés en entreprise, en collaboration et dans le cadre de ma recherche en design.</p></div><div class="filters" aria-label="Filtrer les projets"><button class="filter active" data-filter="all">Tous</button><button class="filter" data-filter="identite">Identité</button><button class="filter" data-filter="edition">Édition</button><button class="filter" data-filter="evenementiel">Événementiel</button><button class="filter" data-filter="motion">Motion design</button><button class="filter" data-filter="mediation">Médiation</button></div><div class="grid">
+      <button class="card" data-category="evenementiel communication" data-title="OcéanOR — Calendrier de l’Avent" data-desc="Un calendrier de l’Avent aux couleurs d’OcéanOR, pensé comme un objet de fête tropical, lumineux et immédiatement reconnaissable." data-tags="Direction artistique,Événementiel,Illustration,Exécution" data-url="projet_calendrier_oce.html"><div class="visual project-image"><img src="images/calendrier_oce.png" alt="Calendrier de l’Avent tropical OcéanOR"><span class="context-badge">Projet réalisé en CDD</span></div><div class="card-info"><div><h3>OcéanOR • Calendrier de l’Avent</h3><div class="meta">Événementiel · Réalisation en CDD</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="evenementiel communication" data-title="Goldcenter — Calendrier de l’Avent" data-desc="Un univers rouge et or conçu pour transformer le calendrier de l’Avent Goldcenter en objet précieux et festif." data-tags="Direction artistique,Événementiel,Illustration,Exécution" data-url="projet_calendrier_gc.html"><div class="visual project-image"><img src="images/calendrier_gc.png" alt="Calendrier de l’Avent rouge et or Goldcenter"><span class="context-badge">Projet réalisé en CDD</span></div><div class="card-info"><div><h3>Goldcenter • Calendrier de l’Avent</h3><div class="meta">Événementiel · Réalisation en CDD</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="edition communication" data-title="OcéanOR Mayotte — Manzaraka" data-desc="Un catalogue de bijoux inspiré de l’élégance, des couleurs et des décors du Manzaraka, cérémonie de mariage mahoraise." data-tags="Direction artistique,Édition,Mise en page,Exécution" data-url="projet_manzaraka.html"><div class="visual project-image"><img src="images/manzaraka_01.png" alt="Catalogue de bijoux Manzaraka pour OcéanOR Mayotte"><span class="context-badge">Projet réalisé en CDD</span></div><div class="card-info"><div><h3>OcéanOR Mayotte • Manzaraka</h3><div class="meta">Édition · Réalisation en CDD</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="communication evenementiel" data-title="Swarovski Réunion" data-desc="Des supports de communication conçus dans le respect de l’univers élégant et lumineux de Swarovski Réunion." data-tags="Communication,Déclinaisons,Print,Digital" data-url="projet_swarovski.html"><div class="visual v6"><strong>SWAROVSKI<br>RÉUNION</strong><span class="context-badge">Projet réalisé en CDD</span></div><div class="card-info"><div><h3>Swarovski Réunion</h3><div class="meta">Communication · Réalisation en CDD</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="identite mediation edition" data-title="Lantant Kazkabar" data-desc="Une identité et une cartographie narrative conçues en collaboration avec l’association pour faire circuler les récits et les savoirs du lieu." data-tags="Identité,Cartographie,Médiation,Collaboration" data-url="projet_kazkabar.html"><div class="visual v1"><img src="images/plan_kzk/plan.png" alt="Aperçu du projet Kazkabar" onerror="this.style.display='none'"><strong>LANTANT KAZKABAR</strong></div><div class="card-info"><div><h3>Lantant Kazkabar</h3><div class="meta">Identité · Cartographie · Collaboration</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="identite edition" data-title="Brin Zétwal" data-desc="Une identité chaleureuse pour une marque réunionnaise de crochet et de couture. Un univers où le geste artisanal, la transmission et les pièces uniques occupent le premier plan." data-tags="Identité visuelle,Direction artistique,Édition,Réseaux sociaux" data-url="projet_brin.html"><div class="visual v2"><img src="images/brin_zetwal/BZ_LOGO.png" alt="Aperçu du projet Brin Zétwal" onerror="this.style.display='none'"><strong>BRIN<br>ZÉTWAL</strong></div><div class="card-info"><div><h3>Brin Zétwal</h3><div class="meta">Identité · Artisanat · 2026</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="edition mediation" data-title="Farfar Listwar — Jeux" data-desc="Un jeu de 7 familles et un « Kosa in soz » pour transmettre des mots et expressions en kréol réunionnais et favoriser le dialogue intergénérationnel." data-tags="Design éditorial,Jeu,Médiation,Créole KWZ" data-url="projet_farfar.html"><div class="visual v3"><img src="images/farfar-listwar.jpg" alt="Aperçu des jeux Farfar Listwar" onerror="this.style.display='none'"><strong>FARFAR<br>LISTWAR</strong></div><div class="card-info"><div><h3>Farfar Listwar • Jeux</h3><div class="meta">Projet de master · Médiation · 2025</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="identite numerique communication" data-title="Univers Moaïa" data-desc="Une identité visuelle solaire et adaptable pour une marque artisanale réunionnaise, déclinée sur les réseaux sociaux, les supports imprimés et les événements." data-tags="Identité visuelle,Print & digital,Réseaux sociaux,Artisanat" data-url="projet_moaia.html"><div class="visual v4"><img src="images/univers-moaia.jpg" alt="Aperçu du projet Univers Moaïa" onerror="this.style.display='none'"><strong>UNIVERS<br>MOAÏA</strong></div><div class="card-info"><div><h3>Univers Moaïa</h3><div class="meta">Identité · Artisanat · Print & digital</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="communication edition" data-title="Au bon endroit !" data-desc="Une campagne d’affichage illustrée pour Repit, construite autour de situations absurdes et du slogan « Vous l’avez fait tomber au bon endroit »." data-tags="Campagne,Affiche,Print,Illustration" data-url="projet_endroit.html"><div class="visual v5"><img src="images/au-bon-endroit.jpg" alt="Aperçu de la campagne Au bon endroit !" onerror="this.style.display='none'"><strong>AU BON<br>ENDROIT !</strong></div><div class="card-info"><div><h3>Au bon endroit !</h3><div class="meta">Campagne · Print · Illustration</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="motion communication" data-title="Journées portes ouvertes — Lycée Ambroise Vollard" data-desc="Un motion design collectif pour les Journées portes ouvertes du Lycée Ambroise Vollard, construit autour d’un cube, de motifs et de séquences en mouvement." data-tags="Motion design,Animation,After Effects,Projet collectif" data-url="projet_jpo.html"><div class="visual v7"><strong>JPO<br>AMBROISE VOLLARD</strong></div><div class="card-info"><div><h3>Journées portes ouvertes • Vollard</h3><div class="meta">Motion design · Projet collectif</div></div><span class="arrow">↗</span></div></button>
+      <button class="card" data-category="edition" data-title="La Fabrique à robot" data-desc="Un projet d’édition jeunesse qui invite les enfants à découvrir et imaginer l’univers du robot par le jeu graphique." data-tags="Édition jeunesse,Illustration,Mise en page,Jeu" data-url="projet_robot.html"><div class="visual v2"><strong>LA FABRIQUE<br>À ROBOT</strong></div><div class="card-info"><div><h3>La Fabrique à robots</h3><div class="meta">Édition jeunesse · Projet d’étude</div></div><span class="arrow">↗</span></div></button>
+      <button class="card secondary-project" data-category="identite edition" data-title="Reine" data-desc="Une identité et des packagings imaginés pour une marque fictive de miel artisanal, autour de l’authenticité, du réemploi et du circuit court." data-tags="Identité,Packaging,Édition,Écoresponsabilité" data-url="projet_reine.html"><div class="visual v6"><img src="images/reine.jpg" alt="Aperçu du projet Reine" onerror="this.style.display='none'"><strong>REINE</strong><span class="context-badge">Projet d’étude</span></div><div class="card-info"><div><h3>Reine</h3><div class="meta">Identité · Packaging · Projet d’étude</div></div><span class="arrow">↗</span></div></button>
+      <button class="card secondary-project" data-category="edition communication" data-title="Journées du patrimoine — Lantant Kazkabar" data-desc="Une affiche culturelle conçue pour Lantant Kazkabar, valorisant les pratiques patrimoniales et la langue créole en graphie KWZ." data-tags="Affiche,Patrimoine,Créole KWZ,Print" data-url="projet_patrimoine.html"><div class="visual v7"><img src="images/journees-patrimoine.jpg" alt="Aperçu de l’affiche Journées du patrimoine" onerror="this.style.display='none'"><strong>JOURNÉES DU<br>PATRIMOINE</strong><span class="context-badge">Projet complémentaire</span></div><div class="card-info"><div><h3>Journées du patrimoine</h3><div class="meta">Affiche · Lantant Kazkabar</div></div><span class="arrow">↗</span></div></button>
+    </div></section>
+    <section class="contact" id="contact"><div><div class="eyebrow" style="justify-content:center">Un projet en tête ?</div><h2>Construisons quelque chose qui vous ressemble.</h2><a href="mailto:contact@cocodelostudio.com">Discuter d’un projet ↗</a><p class="contact-email">contact@cocodelostudio.com</p></div></section>
+  </main><footer><span>© <span id="year"></span> Cocodelo Studio · Coralie Zitte</span><span>Designer graphique & numérique · La Réunion</span></footer>
+  <dialog id="projectDialog"><div class="modal-top"></div><div class="modal-content"><button class="modal-close" aria-label="Fermer">×</button><div class="meta">Étude de cas</div><h3 id="modalTitle"></h3><p id="modalDesc"></p><div class="modal-tags" id="modalTags"></div><a class="modal-link" id="modalLink" href="#">En savoir plus <span>↗</span></a></div></dialog>
+  <script src="script.js"></script>
 </body>
 </html>
-
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Coralie Zitte</title>
-    <link rel="icon" type="image/png" href="sources/images/favicon.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/euz8xsv.css">
-</head>
-<body>
-
-    <!-- 1. HEADER -->
-    <header class="header">
-        <nav class="nav-left">
-            <a href="index.html">accueil</a>
-            <a href="projets.html">projets</a>
-        </nav>
-
-        <div class="logo">
-            <a href="index.html">
-            <img src="sources/images/logo.png" alt="">
-            </a>
-        </div>
-
-
-        <nav class="nav-right">
-            <a href="infos.html">à propos</a>
-            <a href="contact.html">contact</a>
-        </nav>
-    </header>
-
-    <!-- 2. HERO -->
-    <section class="hero">
-        <div class="hero-image">
-            <img src="images/hero.jpg" alt="">
-        </div>
-
-        <div class="hero-text">
-            <h1>Ariv a zot !</h1>
-            <p>Graphiste polyvalente, j’accompagne des projets culturels et créatifs de la conception graphique, à la déclinaison sur des supports imprimés et numériques.
-Mon travail se situe à la croisée du graphisme, de la médiation et de la culture, mêlant rigueur graphique,
-sensibilité artistique et attention portée aux publics. Il vise à concevoir des univers visuels cohérents,
-accessibles et porteurs de sens.</p>
-            <a href="infos.html" class="btn">En savoir plus !</a>
-        </div>
-    </section>
-
-    <!-- 3. BANDEAU -->
-    <section class="slogan">
-        <p>✦ ti lamp ti lamp ✦ ti lamp ti lamp ✦ ti lamp ti lamp ✦</p>
-    </section>
-
-    <!-- 4. SERVICES -->
-    <section class="services">
-        <h1>derniers projets</h1>
-        <div class="service-card">
-            <div class="service-image">
-            <img src="sources/images/projets/logo_moaia.png" alt="">
-            </div>
-            <h3>Univers Moaia</h3>
-            <p>identité visuelle</p>
-            <a href="univers_moaia.html" class="btn">un peu plus ?</a>
-        </div>
-
-        <div class="service-card">
-            <div class="service-image">
-            <img src="sources/images/minicarteKZK.png" alt="">
-            <h3>Cartographie Kazkabar</h3>
-            <p>narration, immersion</p>
-            <a href="kazkabar.html" class="btn">pti zoom ?</a>
-        </div>
-    </section>
-
-    <!-- 5. BLOG 
-    <section class="blog">
-        <div class="blog-text">
-            <h2>On the blog…</h2>
-            <p>Un petit texte fun et humain.</p>
-            <a href="#" class="btn">Bloggie</a>
-        </div>
-
-        <div class="blog-image">
-            <img src="images/blog.jpg" alt="">
-        </div>
-    </section>-->
-
-    <!-- 6. FOOTER -->
-    <footer class="footer">
-        <p>Coralie Zitte © 2026💌</p>
-    </footer>
-
-<script>
-    let lastScrollY = window.scrollY;
-    const buttons = document.querySelectorAll('.btn');
-
-    window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
-
-        if (currentScrollY > lastScrollY) {
-            // scroll vers le bas → anti-horaire
-            buttons.forEach(btn => {
-                btn.classList.add('rotate-down');
-                btn.classList.remove('rotate-up');
-            });
-        } else {
-            // scroll vers le haut → horaire
-            buttons.forEach(btn => {
-                btn.classList.add('rotate-up');
-                btn.classList.remove('rotate-down');
-            });
-        }
-
-        lastScrollY = currentScrollY;
-    });
-</script>
-
-
-
-</body>
-
-</html>
->>>>>>> 113201ebb0931efeb6390179476043762714039a

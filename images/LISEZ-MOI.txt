@@ -1,0 +1,19 @@
+Placez dans ce dossier les visuels du site en conservant les noms indiqués dans les fichiers HTML.
+
+Chaque étude de cas utilise :
+- nom-du-projet-cover.jpg pour l'image principale ;
+- nom-du-projet-01.jpg, nom-du-projet-02.jpg et nom-du-projet-03.jpg pour la galerie.
+
+Les aperçus de l'accueil utilisent notamment :
+- kazkabar.jpg
+- farfar-listwar.jpg
+- univers-moaia.jpg
+- au-bon-endroit.jpg
+- reine.jpg
+- journees-patrimoine.jpg
+
+Le visuel Brin Zétwal utilise actuellement :
+- brin_zetwal/BZ_LOGO.png
+
+Pour le partage sur les réseaux sociaux :
+- cocodelo-social.jpg

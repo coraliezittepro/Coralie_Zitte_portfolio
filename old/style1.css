@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "your_typeface_name", sans-serif;
+  background_color: #f9f2e5;
+  color: #000000;
+}
+
+.container {
+  max_width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.map_title {
+  text_align: center;
+  color: #e8471b;
+  font_weight: 700;
+  letter_spacing: 0.08em;
+  margin_bottom: 30px;
+}
+
+.map_image {
+  width: 100%;
+  max_width : 100%;
+  height: auto;
+  display: block;
+  object_fit: cover;
+  border_radius: 12px;
+  margin_bottom: 50px;
+  padding-bottom: 30px;
+}
+
+/* --- Overlay carte plein écran --- */
+.map_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.map_overlay img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: #f9f2e5;
+}
+
+/* Curseur pour montrer que c’est cliquable */
+.map_image {
+  cursor: zoom-in;
+}
+
+
+.legend {
+  display: grid;
+  grid_template_columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Centrer le texte quand il n’y a que le h2 */
+.legend_item .legend_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* centre verticalement */
+}
+
+
+.legend_item {
+  display: flex;                 /* Picto à gauche, texte à droite */
+  flex-direction: row;
+  align-items: center;      
+  gap: 14px;                     /* Espace entre picto et texte */
+  margin-bottom: 20px;           /* Espacement entre les items */
+}
+
+.legend_picto {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;               /* Empêche le picto de rétrécir */
+}
+
+.legend_content {
+  display: flex;
+  flex-direction: column;       /* Nom + description empilés verticalement */
+}
+
+.legend_content h2 {
+  font-weight: 700;             /* Bold */
+  text-transform: uppercase;    /* Majuscules */
+  color: #e8471b ;               /* Couleur principale */
+  font-size: 1.2rem;           /* Ajustable */
+  margin: 0 0 4px 0;            /* Marge sous le titre */
+}
+
+.legend_content p {
+  font-weight: 400;             /* Regular / medium */
+  font-size: 1rem;           /* Ajustable */
+  line-height: 1.4;
+  color: #000000;               /* Corps de texte noir */
+  margin: 0;                     /* Pas de marge par défaut */
+}
+
+
+
+
+.legend_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e8471b;
+  font-size: 0.95rem;
+  margin-bottom: 4px; /* petit espace entre nom et description */
+}
+
+.legend_description {
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #000000;
+}
+
+
+
+/* --- Container principal --- */
+.language_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;   /* vertical */
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f2e5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 140px;
+  margin-bottom: 30px;
+}
+
+/* Titre */
+.language_title {
+  color: #e8471b;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* Choix langue vertical */
+.language_choices {
+  display: flex;
+  flex-direction: column;  /* vertical */
+  gap: 30px;               /* espace entre FR et EN */
+  align-items: center;
+}
+
+/* Carte / bouton langue */
+.language_card {
+  display: flex;
+  align-items: center;
+  gap: 12px;               /* espace entre drapeau et texte */
+  padding: 20px 30px;
+  border-radius: 14px;
+  border: 2px solid #e8471b;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.language_card:hover {
+  transform: scale(1.05);
+  background-color: #e8471b;
+  color: white;
+}
+
+/* Drapeaux */
+.language_flag {
+  width: 60px;
+  height: auto;
+}
+
+/* Texte bouton */
+.language_name {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+
+
+
+/* Responsive tablette */
+@media (max-width: 450px) {
+  .legend {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 450px) {
+  .language_choices {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .map_image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+  .map_title {
+    font-size: 2rem;
+  }
+
+  .legend h2 {
+    font-size: 1.5rem;
+  }
+
+  .legend p {
+    font-size: 1rem;
+  }
+
+  .legend_picto img {
+    width: 80px;
+  }
+}
+
+
+
+
+/* --- Footer global --- */
+.site_footer {
+  background-color: #f9f2e5;
+  color: black;
+  font-family: "your-font-family", sans-serif;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e8471b;
+}
+
+/* Langues côte à côte */
+.language_footer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px; /* espace entre les langues et le logo */
+}
+
+.language_footer a {
+  text-decoration: none;
+  color: #e8471b;
+  transition: color 0.2s ease;
+}
+
+.language_footer a:hover {
+  color: #000000;
+}
+
+/* Logo + texte */
+.site_footer .footer_bottom .footer_logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.site_footer .footer_bottom p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+
